@@ -1,0 +1,183 @@
+➜  ~ cd planets
+➜  planets ls
+arrakis.jpeg   earth.jpeg     mercury.jpeg   saturn.jpeg
+coruscant.jpeg jupiter.jpeg   neptune.jpeg   uranus.jpeg
+cybertron.jpeg mars.jpeg      pluto.jpeg     venus.jpeg
+➜  planets echo real
+real
+➜  planets ls
+arrakis.jpeg   earth.jpeg     mercury.jpeg   saturn.jpeg
+coruscant.jpeg jupiter.jpeg   neptune.jpeg   uranus.jpeg
+cybertron.jpeg mars.jpeg      pluto.jpeg     venus.jpeg
+➜  planets mkdir real
+➜  planets mkdir fictional
+➜  planets mkdir inhabited
+➜  planets ls
+arrakis.jpeg   earth.jpeg     jupiter.jpeg   neptune.jpeg   saturn.jpeg
+coruscant.jpeg fictional      mars.jpeg      pluto.jpeg     uranus.jpeg
+cybertron.jpeg inhabited      mercury.jpeg   real           venus.jpeg
+➜  planets cd real
+➜  real cp
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+➜  real c..
+zsh: command not found: c..
+➜  real cd ..
+➜  planets mv earth.jpeg/real
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  planets mv~/real earth.jpeg
+zsh: no such file or directory: mv~/real
+➜  planets real
+➜  real ls
+➜  real cd ..
+➜  planets mv earth.jpeg real/hezrth
+➜  planets cd real
+➜  real ls
+hezrth
+➜  real mv hezrth earth.jpeg
+➜  real ls
+earth.jpeg
+➜  real cd..
+zsh: command not found: cd..
+➜  real cd ..
+➜  planets mv mercury.jpeg saturn.jpeg real/mercury.jpeg real/saturn.jpeg
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  planets mv mercury.jpeg real/mercury.jpeg                        
+➜  planets mv saturn.jpeg saturn.jpeg real/saturn.jpeg 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  planets mv saturn.jpeg real/saturn.jpeg
+➜  planets mv jupiter.jpeg real/jupiter.jpeg
+➜  planets mv neptune.jpeg real/neptune.jpeg
+➜  planets mv uranus.jpeg real/uranus.jpeg
+➜  planets mc mars.jpeg real/mars.jpeg
+zsh: command not found: mc
+➜  planets mv mars.jpeg real/mars.jpeg
+➜  planets mv pluto.jpeg real/pluto.jpeg
+➜  planets mv venus.jpeg real/vennus.jpeg
+➜  planets real
+➜  real ls
+earth.jpeg   mars.jpeg    neptune.jpeg saturn.jpeg  vennus.jpeg
+jupiter.jpeg mercury.jpeg pluto.jpeg   uranus.jpeg
+➜  real cd ..
+➜  planets mkdir fictional
+mkdir: fictional: File exists
+➜  planets fictional
+➜  fictional ls
+➜  fictional cd ..
+➜  planets arrakis.jpeg fictional/arrakis.jpeg
+zsh: command not found: arrakis.jpeg
+➜  planets ls
+arrakis.jpeg   coruscant.jpeg cybertron.jpeg fictional      inhabited      real
+➜  planets coruscant.jpeg fictional/coruscant.jpeg
+zsh: command not found: coruscant.jpeg
+➜  planets cybertron.jpeg fictional/cybertron.jpeg
+zsh: command not found: cybertron.jpeg
+➜  planets cybertron.jpeg fictional/cybertron.jpeg
+zsh: command not found: cybertron.jpeg
+➜  planets ls
+arrakis.jpeg   cybertron.jpeg inhabited
+coruscant.jpeg fictional      real
+➜  planets s
+zsh: command not found: s
+➜  planets ls
+arrakis.jpeg   cybertron.jpeg inhabited
+coruscant.jpeg fictional      real
+➜  planets mv arrakis.jpeg fictional/arrakis.jpeg
+➜  planets mv cybertron.jpeg fictional/cybertron.jpeg
+➜  planets mv coruscant.jpeg fictional/coruscant.jpeg
+➜  planets ls
+fictional inhabited real
+➜  planets real
+➜  real ls
+earth.jpeg   mars.jpeg    neptune.jpeg saturn.jpeg  vennus.jpeg
+jupiter.jpeg mercury.jpeg pluto.jpeg   uranus.jpeg
+➜  real cp earth.jpeg ../inhabited/earth.jpeg
+➜  real cd ..
+➜  planets inhabited
+➜  inhabited ls
+earth.jpeg
+➜  inhabited cd ..
+➜  planets fictional
+➜  fictional ls
+arrakis.jpeg   coruscant.jpeg cybertron.jpeg
+➜  fictional cp arrakis.jpeg ../inhabited/arrakis.jpeg
+➜  fictional cp coruscant.jpeg ../inhabited/coruscant.jpeg
+➜  fictional cp cybertron.jpeg ../inhabited/cybertron.jpeg
+➜  fictional cd ..
+➜  planets inhabited
+➜  inhabited ls
+arrakis.jpeg   coruscant.jpeg cybertron.jpeg earth.jpeg
+➜  inhabited cd ..
+➜  planets real
+➜  real ls
+earth.jpeg   mars.jpeg    neptune.jpeg saturn.jpeg  vennus.jpeg
+jupiter.jpeg mercury.jpeg pluto.jpeg   uranus.jpeg
+➜  real mkdir terrestrial
+➜  real mkdir gas-giants
+➜  real mkdir dwarf-planets
+➜  real ls
+dwarf-planets jupiter.jpeg  neptune.jpeg  terrestrial
+earth.jpeg    mars.jpeg     pluto.jpeg    uranus.jpeg
+gas-giants    mercury.jpeg  saturn.jpeg   vennus.jpeg
+➜  real mv earth.jpeg terrestrial/earth.jpeg
+➜  real mv jupiter.jpeg gas-giants/jupiter.jpeg
+➜  real mv neptune.jpeg gas-giants/neptune.jpag
+➜  real mv uranus.jpeg gas-giants/uranus.jpeg
+➜  real ls
+dwarf-planets mars.jpeg     pluto.jpeg    terrestrial
+gas-giants    mercury.jpeg  saturn.jpeg   vennus.jpeg
+➜  real mv saturn.jpeg gas-giants/saturn.jpeg
+➜  real mv mercury.jpeg dwarf-planets/mercury.jpeg
+➜  real mv pluto.jpeg dwarf-planets/pluto.jpeg
+➜  real ls
+dwarf-planets gas-giants    mars.jpeg     terrestrial   vennus.jpeg
+➜  real vennus.jpeg dwarf-planets/vennus.jpeg
+zsh: command not found: vennus.jpeg
+➜  real ls  
+dwarf-planets gas-giants    mars.jpeg     terrestrial   vennus.jpeg
+➜  real mars.jpeg terrestrial/mars.jpeg
+zsh: command not found: mars.jpeg
+➜  real cd..
+zsh: command not found: cd..
+➜  real cd ..
+➜  planets real
+➜  real ls
+dwarf-planets gas-giants    mars.jpeg     terrestrial   vennus.jpeg
+➜  real ma
+zsh: command not found: ma
+➜  real mv mars.jpeg terrestrial/mars.jpeg
+➜  real mv vennus.jpeg terrestrial/vennus.jpeg
+➜  real gas-giants 
+➜  gas-giants ls
+jupiter.jpeg neptune.jpag saturn.jpeg  uranus.jpeg
+➜  gas-giants mv neptune.jpag neptune.jpeg 
+➜  gas-giants ls
+jupiter.jpeg neptune.jpeg saturn.jpeg  uranus.jpeg
+➜  gas-giants cd..
+zsh: command not found: cd..
+➜  gas-giants cd ..
+➜  real dwarf
+zsh: command not found: dwarf
+➜  real dwarf-planets 
+➜  dwarf-planets ls
+mercury.jpeg pluto.jpeg
+➜  dwarf-planets mv mercury.jpeg ../terrestrial/mercury.jpeg
+➜  dwarf-planets ls
+pluto.jpeg
+➜  dwarf-planets cd ..
+➜  real rm dwarf-planets 
+rm: dwarf-planets: is a directory
+➜  real ls
+dwarf-planets gas-giants    terrestrial
+➜  real rmdir dwarf-planets 
+rmdir: dwarf-planets: Directory not empty
+➜  real ls
+dwarf-planets gas-giants    terrestrial
+➜  real rm -R dwarf-planets 
+➜  real ls
+gas-giants  terrestrial
+➜  real 
+➜  real
